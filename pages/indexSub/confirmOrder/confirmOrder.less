@@ -1,0 +1,354 @@
+// =======================================收货详细======================================
+.address {
+	width: 100%;
+	background-color: #fff;
+	padding: 30rpx;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	.div-flex {
+		display: flex;
+		align-items: center;
+	}
+	.left {
+		//有默认地址时
+		font-size: 28rpx;
+		color: #3c3c3c;
+		line-height: 1;
+		max-width: 95%;
+		.top {
+			font-weight: bold;
+			margin-bottom: 20rpx;
+			text {
+				margin-right: 21rpx;
+			}
+		}
+		.bottom {
+			line-height: 40rpx;
+		}
+		.map-img {
+			width: 30rpx;
+			height: 36rpx;
+			margin-right: 21rpx;
+		}
+	}
+	.go-more {
+		width: 14rpx;
+		height: 25rpx;
+		margin-left: auto;
+	}
+}
+// =======================================菜单内容======================================
+.order-info {
+	padding: 0 30rpx;
+	background: #fff;
+	border-radius: 10rpx;
+	margin-top: 16rpx;
+	.hotel {
+		padding: 23rpx 0 40rpx;
+		display: flex;
+		align-items: center;
+		.hotel-img {
+			width: 64rpx;
+			height: 64rpx;
+			border-radius: 50%;
+			margin-right: 21rpx;
+			// margin-bottom: 40rpx;
+		}
+		.hotel-title {
+			color: #3c3c3c;
+			font-size: 28rpx;
+			font-weight: bold;
+		}
+		.arrow-right {
+			width: 16rpx;
+			height: 26rpx;
+			margin-left: auto;
+		}
+	}
+	.order-list {
+		// align-items: flex-end;
+		// padding-bottom: 30rpx;
+		.order-list-item {
+			display: flex;
+			position: relative;
+			padding-bottom: 30rpx;
+
+			.food-img {
+				width: 176rpx;
+				min-width: 176rpx;
+				height: 112rpx;
+				border-radius: 10rpx;
+				margin-right: 26rpx;
+			}
+			.item-name {
+				font-size: 28rpx;
+				font-weight: bold;
+				color: #3c3c3c;
+				line-height: 1;
+				margin: 21rpx 0 16rpx;
+				// max-width: 85%;
+			}
+			.item-price {
+				font-size: 24rpx;
+				color: #0084f9;
+				line-height: 1;
+				// font-family: PingFang-SC-Medium;
+				.price {
+					font-weight: bold;
+					font-size: 30rpx;
+				}
+				.except {
+					font-size: 26rpx;
+				}
+			}
+			.item-num {
+				font-size: 28rpx;
+				color: #3c3c3c;
+				position: absolute;
+				right: 32rpx;
+				bottom: 24rpx;
+			}
+		}
+	}
+}
+// =======================================订单备注======================================
+.deliver-info {
+	padding-bottom: 120rpx;
+	.mar-top {
+		margin-top: 8rpx;
+		background: #fff;
+		border-radius: 10rpx;
+		padding: 0 30rpx;
+		.remark {
+			color: #3c3c3c;
+			font-size: 28rpx;
+			padding-bottom: 30rpx;
+		}
+		.car-pad {
+			padding: 40rpx 0;
+		}
+		.remark-pad {
+			padding: 30rpx 0;
+		}
+		.pay-pad {
+			padding: 36rpx 0;
+		}
+		.fee-pad {
+			padding: 40rpx 0;
+		}
+		.deliver-list {
+			display: flex;
+			align-items: center;
+			border-top: 1rpx solid #f9f9f9;
+			&:first-child {
+				border-bottom: 0;
+			}
+			.list-title {
+				color: #737373;
+				font-size: 28rpx;
+				line-height: 1;
+			}
+			.car-img {
+				width: 42rpx;
+				height: 30rpx;
+				// margin: 40rpx 20rpx 40rpx 0;
+				margin-right: 20rpx;
+			}
+			.remark-img {
+				width: 36rpx;
+				height: 36rpx;
+				margin-right: 26rpx;
+			}
+			.pay-img {
+				width: 36rpx;
+				height: 36rpx;
+				margin-right: 17rpx;
+			}
+			.fee-img {
+				width: 42rpx;
+				height: 30rpx;
+				margin-right: 11rpx;
+			}
+			.discount-img {
+				width: 30rpx;
+				height: 30rpx;
+				margin-right: 21rpx;
+			}
+			.list-right {
+				margin-left: auto;
+				min-width: 50%;
+				text-align: right;
+				.inline {
+					display: inline-block;
+				}
+				.address-img {
+					width: 30rpx;
+					height: 30rpx;
+					margin-right: 20rpx;
+				}
+				.address-tetxt {
+					color: #3c3c3c;
+					font-size: 28rpx;
+				}
+				.mar {
+					margin-right: 56rpx;
+				}
+				.right-rmb {
+					color: #0184f9;
+					font-size: 24rpx;
+				}
+				.right-num {
+					color: #0184f9;
+					font-size: 30rpx;
+					font-weight: bold;
+				}
+				.use-num {
+					//优惠券
+					font-size: 28rpx;
+					color: #ff550c;
+				}
+				.arrow-right {
+					width: 15rpx;
+					height: 26rpx;
+					margin-left: 30rpx;
+				}
+				.total {
+					//总数
+					color: #0184f9;
+					font-size: 40rpx;
+					font-weight: bold;
+				}
+			}
+			.count {
+				font-size: 32rpx;
+				font-weight: bold;
+				color: #0a080b;
+			}
+		}
+		//会员卡优惠
+		.member-benefits {
+			background: #f2f2f2;
+			color: #3c3c3c;
+			font-size: 28rpx;
+			line-height: 90rpx;
+			.member-discount,
+			.member-points {
+				padding-left: 93rpx;
+				.sel-img{
+					width: 30rpx;
+					height: 30rpx;
+					border-radius: 50%;
+				}
+			}
+			.member-points {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.edit {
+					width: 36rpx;
+					height: 32rpx;
+				}
+			}
+		}
+	}
+}
+// =======================================底部固定信息======================================
+.bottom-btn {
+	position: fixed;
+	bottom: 0;
+	background: #fff;
+	padding: 15rpx 30rpx;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	border-top: 1rpx solid #bfbfc3;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 99;
+	.text {
+		color: #737373;
+		font-size: 28rpx;
+		margin-right: 22rpx;
+	}
+	.count {
+		color: #0184f9;
+		font-size: 28rpx;
+		font-weight: bold;
+		margin-right: 49rpx;
+		.num {
+			font-size: 36rpx;
+		}
+	}
+	.btn {
+		height: 80rpx;
+		background: #0184f9;
+		padding: 0 72rpx;
+		font-size: 32rpx;
+		color: #fff;
+		font-weight: bold;
+		line-height: 80rpx;
+		text-align: center;
+		border-radius: 40rpx;
+	}
+}
+//底部积分编辑弹窗
+.points-tip {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 199;
+	background: rgba(0, 0, 0, 0.7);
+}
+.bottom-fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 299;
+	width: 100%;
+	background: #fff;
+	padding-top: 29rpx;
+	.top-title {
+		color: #0a080b;
+		font-size: 32rpx;
+		font-weight: bold;
+		text-align: center;
+	}
+	.mid-info {
+		font-size: 28rpx;
+		color: #737373;
+		display: flex;
+		align-items: center;
+		margin: 70rpx 0 70rpx 80rpx;
+		.have {
+			margin-right: 85rpx;
+		}
+		.use {
+			color: #3c3c3c;
+		}
+		.num {
+			width: 100rpx;
+			margin: 0 10rpx;
+			text-align: center;
+			border-bottom: 2rpx solid #0184f9;
+		}
+	}
+	.points-bottom-btn {
+		display: flex;
+		align-items: center;
+		.btn {
+			width: 50%;
+			line-height: 1;
+			padding: 29rpx 0;
+			text-align: center;
+		}
+		.cancel {
+			color: #737373;
+		}
+		.confirm {
+			color: #0184f9;
+		}
+	}
+}

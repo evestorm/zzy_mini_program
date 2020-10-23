@@ -1,0 +1,108 @@
+// 作者:何文韬
+
+// 头部样式
+.page-header {
+	.test {
+		background-color: red;
+	}
+}
+    .overflow{
+                  max-width: 500rpx;
+                  max-height: 130rpx;
+                  overflow: hidden;
+                  word-break: break-all;  /* break-all(允许在单词内换行。) */
+                  text-overflow: ellipsis;  /* 超出部分省略号 */
+                  display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+                  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+                  -webkit-line-clamp: 1; /** 显示的行数 **/
+				
+    }
+	.contentborder{
+		  border: 5rpx solid #0084F9;
+	}
+	.content{
+		margin: 0 auto;
+		background-color: #ffffff;
+		width: 740rpx;
+		height: 300rpx;
+		margin-top: 35rpx;
+		border-radius: 20rpx;
+		.page-left {
+				border-radius: 20rpx;
+			position:relative;
+			margin:  0;
+			background-color: #ffffff;
+			float: left;
+			// background-color: #007aff;
+			width: 23%;
+			 height: 299rpx;
+			.head {
+				border-radius: 66rpx;
+				width: 132rpx;
+				height: 132rpx;
+				margin: 50rpx 15rpx;
+			}
+			.pitchon{
+				position: absolute;
+				top: 0rpx;
+				left: 0rpx;
+				width: 50rpx;
+				height: 50rpx;
+			}
+			.check{
+				position: absolute;
+				top: 6rpx;
+				left: 6rpx;
+				width: 26rpx;
+				height: 18rpx;
+			}
+		}
+		.page-right {
+			position:relative;
+			border-radius: 20rpx;
+			margin:  0;
+			background-color: #ffffff;
+			float: left;
+			padding-top: 48rpx;
+		     height: 252rpx;
+			// background-color: #01bf05;
+			width: 75%;
+			display: flex;
+			flex-direction: column;
+			.store {
+				font-size: 32rpx;
+				font-family: PingFang SC;
+				font-weight: bold;
+				color: rgba(60, 60, 60, 1);
+			}
+			.area{
+				font-size: 28rpx;
+				
+				color: rgba(60, 60, 60, 1);
+			}
+			.button{
+				position: absolute;
+				right: 20rpx;
+				bottom: 10rpx;
+				width:200rpx;
+				height:56rpx;
+				background:rgba(0,132,249,1);
+				border-radius:28rpx;
+				text-align: center;
+				color:rgba(255,255,255,1);
+				font-size: 28rpx;
+				line-height: 56rpx;
+				font-weight:bold;
+			}
+			
+		}
+	}
+	
+
+// 内容样式
+
+.page-bottom {
+	.test {
+		background-color: red;
+	}
+}

@@ -1,0 +1,86 @@
+page {
+}
+.commission-page {
+	margin-top: 30rpx;
+	//头部
+	.customer-top {
+		background: #fff;
+		padding: 30rpx;
+		border-radius: 10rpx;
+		.customer-top-info {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20rpx;
+			.head-img {
+				width: 132rpx;
+				height: 132rpx;
+				border-radius: 50%;
+				margin-right: 30rpx;
+			}
+			.name {
+				font-size: 36rpx;
+				color: #3c3c3c;
+				line-height: 1;
+				font-weight: bold;
+				margin-bottom: 23rpx;
+			}
+			.phone {
+				font-size: 28rpx;
+				color: #737373;
+				line-height: 1;
+			}
+		}
+		.doMoney {
+			.money {
+				text-align: center;
+				width: 200rpx;
+				.text {
+					font-size: 28rpx;
+					color: #737373;
+					line-height: 1;
+					margin-bottom: 20rpx;
+				}
+				.num {
+					font-size: 40rpx;
+					font-weight: bold;
+					color: #0084f9;
+					line-height: 1;
+				}
+			}
+		}
+	}
+	//流水列表
+	.info {
+		margin-top: 20rpx;
+		.info-list {
+			padding: 30rpx;
+			background: #fff;
+			border-radius: 10rpx;
+			margin-top: 8rpx;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.list-left {
+				.title {
+					font-size: 36rpx;
+					font-weight: bold;
+					color: #3c3c3c;
+					max-width: 400rpx;
+				}
+				.time {
+					font-size: 26rpx;
+					color: #3c3c3c;
+				}
+			}
+			.right {
+				font-size: 40rpx;
+				font-weight: bold;
+				text-align: right;
+				color: #0184f9;
+			}
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

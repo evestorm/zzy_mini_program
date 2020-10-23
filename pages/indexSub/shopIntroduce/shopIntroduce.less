@@ -1,0 +1,500 @@
+.bg-white {
+	background: #fff;
+}
+.flex {
+	display: flex;
+	align-items: center;
+}
+.page-content {
+	//=============================顶部店铺信息=============================
+	.top-shop-info {
+		padding: 30rpx 30rpx 0;
+		// 轮播
+		.top-swiper {
+			position: relative;
+			.swiper {
+				margin: 0 auto;
+				display: block;
+				width: 690rpx;
+				height: 200rpx;
+				border-radius: 5rpx;
+				overflow: hidden;
+				image {
+					height: 100%;
+					width: 100%;
+					border-radius: 5rpx;
+					overflow: hidden;
+					display: block;
+				}
+			}
+			// swiper 小圆点
+			.dots {
+				position: absolute;
+				bottom: 16rpx;
+				left: 50%;
+				// 这里一定要注意兼容不然很可能踩坑
+				transform: translate(-50%, 0);
+				-webkit-transform: translate(-50%, 0);
+				z-index: 99;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				.dot {
+					width: 8rpx;
+					height: 8rpx;
+					border-radius: 50%;
+					transition: all 0.6s;
+					background: #f2f2f2;
+					margin-right: 8rpx;
+				}
+
+				.active {
+					width: 16rpx;
+					height: 8rpx;
+					border-radius: 4rpx;
+					background: #0183ff;
+					border: none;
+				}
+			}
+			// 收藏
+			.collection {
+				position: absolute;
+				bottom: 17rpx;
+				right: 20rpx;
+				width: 76rpx;
+				height: 50rpx;
+				background: rgba(0, 0, 0, 0.5);
+				// padding: 8rpx 20rpx 6rpx;
+				border-radius: 23rpx;
+				// display: flex;
+				justify-content: center;
+				// align-items: center;
+				image {
+					width: 36rpx;
+					height: 36rpx;
+				}
+			}
+		}
+		.top-sec {
+			padding-top: 30rpx;
+			.top-sec-left {
+				max-width: 70%;
+				.shop-name {
+					color: #0a080b;
+					font-size: 32rpx;
+					font-weight: bold;
+					line-height: 1;
+				}
+				.shop-score {
+					margin: 24rpx 0;
+					// display: flex;
+					// justify-content: space-between;
+					// align-items: center;
+					.score-wrapper {
+						width: 200rpx;
+						display: flex;
+						justify-content: space-evenly;
+						image {
+							width: 30rpx;
+							height: 30rpx;
+						}
+					}
+					.per-wrapper {
+						// display: flex;
+						// align-items: center;
+						justify-content: center;
+						margin-left: 28rpx;
+						font-size: 20rpx;
+						font-family: PingFang SC;
+						color: rgba(89, 89, 89, 1);
+						.unit {
+							font-size: 24rpx;
+						}
+						.num {
+							margin-left: 5rpx;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+			.top-sec-right {
+				margin-left: auto;
+				.phone {
+					width: 56rpx;
+					height: 56rpx;
+					margin-right: 60rpx;
+				}
+				.see-more {
+					color: #0084f9;
+					font-size: 28rpx;
+				}
+			}
+			.shop-address {
+				.map-icon {
+					width: 30rpx;
+					height: 36rpx;
+					margin-right: 17rpx;
+				}
+				.address {
+					color: #3c3c3c;
+					font-size: 28rpx;
+					font-weight: bold;
+					font-family: PingFang-SC-Bold;
+					.img {
+						width: 16rpx;
+						height: 26rpx;
+					}
+				}
+			}
+		}
+		// 我的权益 轮播
+		.tower-swiper {
+			height: 370rpx !important;
+			.tower-item {
+				width: 630rpx !important;
+				height: 300rpx !important;
+				margin-top: 20rpx;
+				margin-bottom: 34rpx;
+				// margin: 20rpx auto 34rpx!important;
+				transform: scale(calc(1 - var(--index) / 15));
+				opacity: scale(calc(1 - var(--index) / 5));
+				.card {
+					// 会员卡
+					width: 100%;
+					height: 100%;
+					background: url('https://pic.cwyyt.cn/upload/img/20200425/1352445244_zzy-bg-会员卡.png');
+					background-size: 100% 100%;
+					.card-name {
+						font-size: 32rpx;
+					}
+					.card-mid {
+						margin: 30rpx 0;
+						.mid-title {
+							// color: #E6E6E6;
+							font-size: 22rpx;
+						}
+						.mid-info {
+							font-size: 32rpx;
+						}
+					}
+					.card-bottom {
+						font-size: 24rpx;
+						text {
+							margin-right: 12rpx;
+						}
+					}
+				}
+				.coupons {
+					// 优惠券
+					background-size: 100% 100%;
+					width: 100%;
+					height: 100%;
+					.coupon-name {
+						font-size: 34rpx;
+					}
+					.coupon-btn {
+						width: 150rpx;
+						line-height: 56rpx;
+						text-align: center;
+						background-color: #d7b187;
+						border-radius: 28rpx;
+						font-size: 28rpx;
+					}
+					.coupons-mid {
+						margin: 40rpx 0;
+					}
+					.coupons-mid,
+					.coupons-bottom {
+						font-size: 22rpx;
+						.use-date {
+							font-size: 28;
+						}
+					}
+				}
+			}
+			// swiper 小圆点
+			.dots {
+				position: absolute;
+				bottom: 30rpx;
+				left: 50%;
+				// 这里一定要注意兼容不然很可能踩坑
+				transform: translate(-50%, 0);
+				-webkit-transform: translate(-50%, 0);
+				z-index: 99;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				.dot {
+					width: 8rpx;
+					height: 8rpx;
+					border-radius: 50%;
+					transition: all 0.6s;
+					background: #f2f2f2;
+					margin-right: 8rpx;
+				}
+
+				.active {
+					width: 16rpx;
+					height: 8rpx;
+					border-radius: 4rpx;
+					background: #0183ff;
+					border: none;
+				}
+			}
+		}
+		.no-my-card {
+			// 我的权益为空
+			width: 630rpx;
+			height: 300rpx;
+			margin: 43rpx auto;
+			background-size: 100% 100%;
+			display: flex;
+			padding-top: 93rpx;
+			.no-my-card-text {
+				color: #737373;
+				font-size: 28rpx;
+				margin: 0 auto;
+				line-height: 1;
+			}
+		}
+		// 客户经理
+		.market {
+			// padding: 30rpx;
+			.head-img {
+				width: 100rpx;
+				height: 100rpx;
+				border-radius: 50%;
+				margin-right: 27rpx;
+			}
+			.mid {
+				.name {
+					color: #3c3c3c;
+					font-size: 32rpx;
+					font-weight: bold;
+					margin-right: 40rpx;
+				}
+				.rate {
+					width: 30rpx;
+					height: 30rpx;
+					margin-right: 8rpx;
+				}
+				.text {
+					color: #ff550c;
+					font-size: 22rpx;
+					font-weight: bold;
+				}
+				.mid-bottom {
+					color: #767676;
+					font-size: 28rpx;
+				}
+			}
+			.right {
+				margin-left: auto;
+				color: #0084f9;
+				font-size: 28rpx;
+				font-weight: bold;
+				font-family: PingFang-SC-Bold;
+				padding: 0 21rpx;
+				text-align: center;
+				border-radius: 26rpx;
+				border: 1px solid #0084f9;
+				line-height: 57rpx;
+			}
+		}
+	}
+	// ==========================线上商城+在线预订==========================
+	.get-order {
+		color: #fff;
+		text-align: center;
+		.card {
+			height: 202rpx;
+			background-size: 100% 100%;
+			padding-top: 60rpx;
+			line-height: 1;
+			.top-title {
+				font-size: 36rpx;
+				font-weight: bold;
+				margin-bottom: 20rpx;
+			}
+			.bottom {
+				font-size: 26rpx;
+			}
+		}
+		.card-left {
+			width: 383rpx;
+		}
+		.card-right {
+			width: 367rpx;
+			padding-right: 30rpx;
+		}
+	}
+	// ==========================优惠活动==========================
+	.no-get {
+		padding: 0 0 30rpx 30rpx;
+		.title {
+			color: #0a080b;
+			font-size: 32rpx;
+			font-weight: bold;
+			.no-data {
+				color: #737373;
+				font-size: 22rpx;
+				font-weight: normal;
+			}
+		}
+		.scoll-w {
+			display: flex;
+			flex-direction: column;
+			.card-area {
+				// 卡券视图区
+				width: 320rpx;
+				height: 160rpx;
+				background-size: 100% 100%;
+			}
+			.coupons {
+				// 优惠券
+				padding: 17rpx 16rpx 0 21rpx;
+				min-width: 320rpx;
+				margin-right: 16rpx;
+				position: relative;
+				.coupons-top {
+					.coupons-name {
+						justify-content: space-between;
+						color: #0084f9;
+						.name {
+							font-size: 28rpx;
+							font-weight: bold;
+							width: 77%;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							overflow: hidden;
+							word-break: break-all;
+						}
+						.btn {
+							color: #fff;
+							font-size: 30rpx;
+							font-weight: bold;
+							background: #ff550c;
+							width: 46rpx;
+							height: 46rpx;
+							border: 1px solid #fff;
+							border-radius: 50%;
+						}
+					}
+					.price {
+						// 秒杀券
+						color: #0084f9;
+						font-size: 22rpx;
+						margin-top: 11rpx;
+						line-height: 1;
+						.num {
+							color: #ff550c;
+							font-size: 26rpx;
+							font-weight: bold;
+						}
+						.old-price {
+							color: #0084f9;
+							font-size: 20rpx;
+							text-decoration: line-through;
+							margin-left: 29rpx;
+						}
+					}
+					.use-remark {
+						// 优惠券
+						color: #0084f9;
+						font-size: 20rpx;
+						font-weight: bold;
+						font-family: PingFang-SC-Bold;
+						margin-top: 11rpx;
+						line-height: 1;
+						.mid {
+							font-size: 18rpx;
+							font-weight: normal;
+							font-family: PingFang-SC-Medium;
+						}
+					}
+				}
+				.coupons-bottom {
+					position: absolute;
+					bottom: 6rpx;
+					left: 20rpx;
+					.text {
+						font-size: 20rpx;
+						color: #0084f9;
+						font-family: PingFang-SC-Medium;
+					}
+					.text-bold {
+						font-weight: bold;
+						font-family: PingFang-SC-Bold;
+					}
+					.time-memter {
+						// 定时器样式
+						display: flex;
+						align-items: center;
+						margin-left: 10rpx;
+						.time {
+							background: #ff550c;
+							color: #fffefe;
+							font-size: 24rpx;
+							font-weight: bold;
+							line-height: 30rpx;
+							padding: 0 11rpx;
+							border-radius: 5rpx;
+						}
+						.unit {
+							color: #ff550c;
+							font-size: 24rpx;
+							font-weight: bold;
+							margin: 0 5rpx;
+						}
+					}
+				}
+			}
+			.card {
+				min-width: 320rpx;
+				margin-right: 16rpx;
+				border-radius: 10rpx;
+				padding: 25rpx 0 0 18rpx;
+				.top {
+					display: flex;
+					align-items: center;
+					.logo {
+						width: 30rpx;
+						height: 30rpx;
+						border-radius: 50%;
+						margin-right: 17rpx;
+					}
+					.card-name {
+						color: #0084f9;
+						font-size: 28rpx;
+						font-weight: bold;
+						font-family: PingFang-SC-Bold;
+					}
+				}
+			}
+		}
+	}
+}
+// 底部跳转
+.page-bottom {
+	.list {
+		margin-top: 16rpx;
+		padding: 30rpx;
+		.left {
+			line-height: 1;
+			color: #0a080b;
+			font-size: 32rpx;
+			font-weight: bold;
+			font-family: PingFang-SC-Bold;
+		}
+		.right {
+			margin-left: auto;
+			font-size: 28rpx;
+			color: #737373;
+		}
+		.get-more {
+			width: 15rpx;
+			height: 36rpx;
+			margin-left: 29rpx;
+		}
+	}
+}

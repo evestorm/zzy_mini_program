@@ -1,0 +1,147 @@
+// 容器
+.huiyuan-fenxiao {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: #f5f5f5;
+	box-sizing: border-box;
+	padding-top: 30rpx;
+}
+
+// 顶部卡片
+.card {
+	// display: flex;
+	background: #FFFFFF;
+	border-radius: 10rpx;
+	// box-shadow: 1px 1px 5px #f6f6f6;
+	// flex-direction: column;
+	// height: 294rpx;
+	margin-bottom: 20rpx;
+	// overflow: hidden;
+	
+	.person-info {
+		display: flex;
+		padding: 30rpx;
+		box-sizing: border-box;
+		align-items: center;
+		justify-content: flex-start;
+		.left {
+			width: 132rpx;
+			height: 132rpx;
+			.avatar {
+				width: 100%;
+				height: 100%;
+				border-radius: 64rpx;
+				overflow: hidden;
+			}
+		}
+		.right {
+			flex: 1;
+			padding-left: 30rpx;
+			.type {
+				font-size: 32rpx;
+				font-weight: bold;
+				color: #3C3C3C;
+				line-height: 1;
+				margin-bottom: 23rpx;
+			}
+			.nickname, .phone {
+				font-size: 28rpx;
+				color: #737373;
+			}
+		}
+	}
+	
+	.fenxiao-group {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		padding-bottom: 30rpx;
+		.left{
+			margin-left: -30rpx;
+		}
+		.right{
+			margin-right: -30rpx;
+		}
+		.item {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.title {
+				font-size: 28rpx;
+				color: #737373;
+				line-height: 1;
+			}
+			.num {
+				font-size: 28rpx;
+				color: #44aafd;
+				font-size: 40rpx;
+				color: #0084F9;
+				font-weight: bold;
+				margin-top: 10px;
+				line-height: 1;
+			}
+		}
+	}
+}
+.info{
+	background: #fff;
+	padding: 30rpx;
+	border-radius: 10rpx;
+}
+// 分销码区域
+.fenxiao-code-wrapper {
+	// 690 620
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	height: 660rpx;
+	.banner {
+		width: 100%;
+		border-radius: 8rpx;
+		overflow: hidden;
+		max-height: 624rpx;
+		.image {
+			width: 100%;
+			height: 624rpx;
+			vertical-align: bottom;
+		}
+	}
+	
+	.sw-btn {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0 auto;
+		background: #0184f9;
+		width: 540rpx;
+		height: 80rpx;
+		line-height: 80rpx;
+		border-radius: 40rpx;
+		color: white;
+		// box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+		font-size: 32rpx;
+		font-weight: bold;
+	}
+}
+
+// 警告区
+.warning-wrapper {
+	margin-top: 55rpx;
+	display: flex;
+	.warning-img {
+		width: 30rpx;
+		height: 30rpx;
+		padding-right: 17rpx;
+		padding-top: 10rpx;
+	}
+	.warning-info {
+		flex: 1;
+		font-size: 24rpx;
+		color: #999;
+	}
+}

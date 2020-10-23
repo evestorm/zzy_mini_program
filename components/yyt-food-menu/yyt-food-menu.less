@@ -1,0 +1,218 @@
+// 作者:覃彬
+.yyt-food-menu{
+	background: #fff;
+	// min-height: 1250rpx;
+	.yyt-food-menu-item {
+		position: relative;
+		.item-img {
+			width: 200rpx;
+			min-width: 200rpx;
+			height: 120rpx;
+			margin-right: 24rpx;
+			border-radius: 10rpx;
+			image {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.item-mid {
+			.food-name {
+				color: #3c3c3c;
+				font-size: 28rpx;
+				line-height: 1;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				max-width: 450rpx;
+			}
+			.food-sale-count {
+				color: #999;
+				font-size: 24rpx;
+				line-height: 1;
+				margin: 16rpx 0;
+			}
+			.food-price {
+				//价格
+				.food-now-price {
+					font-size: 24rpx;
+					color: #0084f9;
+					font-family: PingFang-SC-Medium;
+					margin-right: 20rpx;
+					.price {
+						font-weight: bold;
+						font-size: 30rpx;
+					}
+					.except {
+						font-size: 26rpx;
+					}
+				}
+				.food-ago-price {
+					font-size: 24rpx;
+					color: #999;
+					text-decoration: line-through;
+				}
+			}
+		}
+		.item-by-count {
+			position: absolute;
+			top: 0;
+			right: 0;
+			.food-is-sel {
+				display: flex;
+				align-items: center;
+				flex-wrap: nowrap;
+			}
+			.left-icon {
+				padding: 38rpx;
+			}
+			.right-icon {
+				padding: 38rpx 30rpx 38rpx 38rpx;
+			}
+			.sel-icon {
+				width: 40rpx;
+				height: 40rpx;
+				border-radius: 50%;
+			}
+			.is-unsel{
+				padding: 38rpx 30rpx 38rpx 38rpx;
+			}
+			.num {
+				color: #3c3c3c;
+				font-size: 28rpx;
+			}
+		}
+	}
+	// ================================= 购物车==================================
+	.mengban {
+		position: fixed;
+		bottom: 110rpx;
+		z-index: 100;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.shopping-cart {
+		width: 100%;
+		position: fixed;
+		bottom: 100rpx;
+		z-index: 210;
+		background: #fff;
+		max-height: 780rpx;
+		.foot-list {
+			padding: 36rpx 30rpx 36rpx 33rpx;
+			line-height: 1;
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid #f2f2f2;
+			.foot-name {
+				font-size: 28rpx;
+				color: #3c3c3c;
+				width: 200rpx;
+				margin-right: 20rpx;
+			}
+			.item-price {
+				font-size: 24rpx;
+				color: #0084f9;
+				font-family: PingFang-SC-Medium;
+				.price {
+					font-weight: bold;
+					font-size: 30rpx;
+				}
+				.except {
+					font-size: 26rpx;
+				}
+			}
+			.foot-num {
+				margin-left: auto;
+				display: flex;
+				align-items: center;
+				.sel-icon {
+					width: 40rpx;
+					height: 40rpx;
+					border-radius: 50%;
+				}
+				.num {
+					color: #3c3c3c;
+					font-size: 28rpx;
+					margin: 0 37rpx;
+				}
+			}
+		}
+	}
+	// ================================= 底部固定tab购物车+价格+去结算按钮==================================
+	.bottom-view {
+		width: 100%;
+		height: 135rpx;
+	}
+	.bottom-fixed {
+		padding: 14rpx 30rpx 16rpx;
+		border-top: 1rpx solid #bfbfc3;
+		background: #fff;
+		box-sizing: border-box;
+		z-index: 200;
+		.bottom-left {
+			position: relative;
+			margin-right: 56rpx;
+			// float: left;
+			.shopping-img {
+				width: 54rpx;
+				height: 54rpx;
+			}
+			.badge {
+				position: absolute;
+				top: 0;
+				right: -15rpx;
+				padding: 7rpx 10rpx;
+				line-height: 1;
+				color: #ffff;
+				font-size: 20rpx;
+				background: #f00;
+				border-radius: 50%;
+			}
+		}
+		.total {
+			color: #0084f9;
+			font-size: 28rpx;
+			// float: left;
+			.num {
+				font-size: 36rpx;
+				font-weight: bold;
+			}
+		}
+		.btn {
+			padding: 24rpx 87rpx;
+			background: #0184f9;
+			color: #fff;
+			font-size: 32rpx;
+			font-weight: bold;
+			border-radius: 40rpx;
+			line-height: 1;
+			// float: right;
+			margin-left: auto;
+		}
+		.disbtn {
+			box-sizing: border-box;
+			padding: 24rpx 87rpx;
+			background: #f2f2f2;
+			border-radius: 40rpx;
+			// float: right;
+			margin-left: auto;
+			position: relative;
+			min-width: 270rpx;
+			height: 80rpx;
+			.btn {
+				// width: 198rpx;
+				height: 60rpx;
+				background: #000;
+				line-height: 60rpx;
+				color: #fff;
+				font-size: 24rpx;
+				position: absolute;
+				top: 10rpx;
+				right: 0;
+				padding: 0 28rpx;
+				border-radius: 10rpx;
+			}
+		}
+	}
+}

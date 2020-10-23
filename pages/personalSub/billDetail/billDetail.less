@@ -1,0 +1,92 @@
+// 容器
+.bill-detail {
+	position: relative;
+	// width: 100vw;
+	// height: 100vh;
+	// overflow: hidden;
+	// background: #ffffff;
+}
+
+// 头部
+.header {
+	display: flex;
+	// border-bottom: 1px solid #ebebeb;
+	height: 160rpx;
+	box-sizing: border-box;
+	background: #fff;
+	margin-top: 30rpx;
+	border-radius: 10rpx;
+	padding: 55rpx 35rpx 55rpx 32rpx;
+	line-height: 1;
+	.left {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.title {
+			font-size: 36rpx;
+			font-weight: bold;
+			color: #3c3c3c;
+		}
+		.desc {
+			font-size: 32rpx;
+			color: #595959;
+			margin-top: 23rpx;
+			line-height: 1;
+		}
+	}
+	.right {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		align-items: flex-end;
+		justify-content: flex-end;
+		.money {
+			font-size: 50rpx;
+			color: #0184f9;
+		}
+		.unit {
+			font-size: 24rpx;
+			color: #0184f9;
+			padding-left: 10rpx;
+		}
+	}
+}
+
+// 列表页
+.list {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	margin-top: 8rpx;
+	border-radius: 10rpx;
+	.item {
+		box-sizing: border-box;
+		padding: 30rpx 31rpx;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 28rpx;
+		.title {
+			color: #737373;
+		}
+		.desc {
+			display: flex;
+			align-items: center;
+			color: #3c3c3c;
+			.unit {
+				font-size: 24rpx;
+				// color: #4c4c4c;
+				padding-right: 10rpx;
+			}
+			.num{
+				font-size: 26rpx;
+				color:  #0184f9;
+			}
+		}
+		.money {
+			color: #0184f9;
+		}
+	}
+}

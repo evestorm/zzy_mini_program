@@ -1,0 +1,243 @@
+.container {
+	width: 100vw;
+	// height:calc(100vh - 44px);
+	overflow: hidden;
+	background: rgba(242, 242, 242, 1);
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: space-between;
+	// align-items: center;
+	box-sizing: border-box;
+	padding: 30rpx;
+}
+
+// 券
+.panel {
+	// flex-shrink: 0;
+	position: relative;
+	width: 690rpx;
+	background: #fff;
+	padding-bottom: 100rpx;
+	// height: 864rpx;
+	// background: url('https://pic.cwyyt.cn/upload/img/20200323/1928372837_coupons-detail-bg.png');
+	// background-position: center center;
+	// background-size: 100% 100%;
+	// background-repeat: no-repeat;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-items: space-between;
+
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-sizing: border-box;
+		padding: 30rpx;
+		.logo {
+			width: 64rpx;
+			height: 64rpx;
+			border-radius: 50%;
+		}
+		.name {
+			margin-left: 20rpx;
+			margin-right: auto;
+			font-size: 32rpx;
+			font-family: PingFang SC;
+			font-weight: 500;
+		}
+		.sales {
+			font-size: 24rpx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			// color: rgba(254, 255, 255, 1);
+			text {
+				font-size: 34rpx;
+			}
+		}
+	}
+
+	.amount-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// margin-top: 40rpx;
+		width: 100%;
+		height: 200rpx;
+		margin-bottom: auto;
+		background-image:url('https://pic.cwyyt.cn/upload/img/20190524/0958495849_02.jpg');
+		opacity:0.9;
+		background-position: center center;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		position: relative;
+		&::after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 200rpx;
+			background: rgba(0,0,0,0.4);
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+		}
+		.amount {
+			font-size: 44rpx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			color: rgba(255, 255, 255, 1);
+			z-index: 5;
+			text-align: center;
+			text {
+				font-weight: bold;
+				font-size: 100rpx;
+			}
+		}
+		.desc {
+			font-size: 32rpx;
+			font-family: PingFang SC;
+			font-weight: bold;
+			// color: rgba(255, 255, 255, 1);
+		}
+	}
+
+	.info-wrapper {
+		box-sizing: border-box;
+		padding: 30rpx;
+		font-size: 26rpx;
+		font-family: PingFang SC;
+		color: #333333;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: flex-start;
+		.card-code {
+			font-size: 26rpx;
+			font-family: PingFang SC;
+			font-weight: bold;
+			color: rgba(0, 132, 249, 1);
+		}
+		.available-stores,
+		.deadline,
+		.available-time,
+		.address {
+			text {
+				font-size: 26rpx;
+			}
+		}
+		.info-item{
+			display: flex;
+			align-items: flex-start;
+			border-top: 1px solid #f0f0f0;
+			padding: 10px 0;
+			.left-title{
+				width: 160rpx;
+				min-width: 160rpx;
+			}
+		}
+	}
+	// 章子
+	.stamp {
+		width: 200rpx;
+		height: 200rpx;
+		position: absolute;
+		top: 57%;
+		right: 40rpx;
+		transform: translateY(-50%);
+		.img {
+			width: 200rpx;
+			height: 200rpx;
+		}
+	}
+}
+
+// 底部
+.bottom-wrapper {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 20rpx 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #fff;
+	box-shadow: 0 -6rpx 20rpx #ddd;
+	&:empty{
+		visibility:hidden ;
+	}
+	button {
+		height: 80rpx;
+		border: 2rpx solid rgba(0, 132, 249, 1);
+		border-radius: 40rpx;
+		font-size: 32rpx;
+		font-family: PingFang SC;
+		font-weight: bold;
+		color: rgba(0, 132, 249, 1);
+		&.fill {
+			background: rgba(0, 132, 249, 1);
+			color: rgba(255, 255, 255, 1);
+		}
+		&.disable {
+			background: rgba(194, 226, 255, 1);
+		}
+	}
+}
+.wrapper{
+	.img{
+		width:600rpx;
+		height: 900rpx;
+	}
+	.btn{
+		width: 560rpx;
+		height: 80rpx;
+		border-radius: 40rpx;
+		line-height: 80rpx;
+		text-align: center;
+		background: #0184f9;
+		font-size: 32rpx;
+		font-weight: bold;
+		color: #fff;
+		margin-top: 20rpx;
+	}
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 9000;
+	.modalDlg {
+		width: 690rpx;
+		// height: 423rpx;
+		margin: 50rpx auto;
+		z-index: 9999;
+		background-color: #fff;
+		border-radius: 10rpx;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 30rpx 0;
+		.img {
+			width: 610rpx;
+			height: 900rpx;
+		}
+		.btn {
+			width: 560rpx;
+			height: 80rpx;
+			border-radius: 40rpx;
+			line-height: 80rpx;
+			text-align: center;
+			background: #0184f9;
+			font-size: 32rpx;
+			font-weight: bold;
+			color: #fff;
+			margin-top: 20rpx;
+		}
+	}
+}

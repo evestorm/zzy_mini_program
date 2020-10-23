@@ -1,0 +1,268 @@
+// 头部样式
+.page-header {
+	margin: 0 30rpx 8rpx 30rpx;
+	padding: 24rpx 20rpx;
+	color: #fff;
+	background: #0183ff; //暂时使用蓝背景代替背景图
+	border-radius: 10rpx;
+	line-height: 1;
+	.top-shopname {
+		display: flex;
+		align-items: center;
+		.shop-img {
+			width: 64rpx;
+			height: 64rpx;
+			border-radius: 50%;
+			margin-right: 21rpx;
+		}
+		.text,
+		.num {
+			font-size: 28rpx;
+			font-weight: bold;
+		}
+		.num {
+			margin-left: auto;
+		}
+	}
+	.bottom {
+		display: flex;
+		align-items: center;
+		margin-top: 30rpx;
+		.ticket-name {
+			font-size: 32rpx;
+			font-weight: bold;
+		}
+		.ticket-right {
+			margin-left: auto;
+			font-size: 22rpx;
+		}
+	}
+}
+
+// 内容样式
+.page-content {
+	.timer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 25rpx 30rpx 30rpx 30rpx;
+		background: #fff;
+		border-radius: 10rpx;
+		.left {
+			.top-price {
+				font-size: 24rpx;
+				color: #3c3c3c;
+				display: flex;
+				align-items: flex-end;
+				margin-bottom: 29rpx;
+				.pay {
+					margin-right: 60rpx;
+					.rmb {
+						font-weight: bold;
+					}
+					.num {
+						color: #ff550c;
+						font-size: 40rpx;
+						font-weight: bold;
+						margin: 0 6rpx;
+					}
+					.unit {
+						font-size: 22rpx;
+					}
+				}
+				.meet {
+					text-decoration: line-through;
+
+					.num {
+						font-weight: bold;
+					}
+				}
+			}
+			.bottom-time {
+				display: flex;
+				align-items: center;
+				line-height: 1;
+				.img {
+					width: 36rpx;
+					height: 36rpx;
+					margin-right: 16rpx;
+				}
+				.text {
+					// padding: 6rpx 10rpx;
+					width: 94rpx;
+					height: 36rpx;
+					text-align: center;
+					background: #ff4e00;
+					border-radius: 6rpx;
+					font-size: 25rpx;
+					color: #fff;
+					margin-right: 12rpx;
+					line-height: 36rpx;
+				}
+				.no-count {
+					font-size: 24rpx;
+					font-weight: bold;
+					color: #ff4e00;
+					font-family: PingFang-SC-Bold;
+				}
+				.time-memter {
+					display: flex;
+					align-items: center;
+					.time {
+						background: #ff4e00;
+						color: #fff;
+						font-size: 28rpx;
+						font-weight: bold;
+						line-height: 36rpx;
+						padding: 7rpx 11rpx;
+						border-radius: 6rpx;
+					}
+					.unit {
+						color: #ff4e00;
+						font-size: 28rpx;
+						font-weight: bold;
+						margin: 0 10rpx;
+					}
+				}
+			}
+		}
+		.right {
+			color: #3c3c3c;
+			font-size: 28rpx;
+			.num {
+				color: #ff550c;
+				font-size: 40rpx;
+				font-weight: bold;
+			}
+		}
+	}
+	.need-konw {
+		background: #fff;
+		padding: 30rpx;
+		border-radius: 10rpx;
+		font-size: 28rpx;
+		margin-top: 17rpx;
+		line-height: 1;
+		.top-title {
+			font-size: 32rpx;
+			color: #0a080b;
+			font-weight: bold;
+			margin-bottom: 7rpx;
+		}
+		.know-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.title {
+			color: #737373;
+			margin-top: 40rpx;
+		}
+		.info {
+			color: #3c3c3c;
+			margin-top: 27rpx;
+		}
+		.left-20 {
+			margin-left: 20rpx;
+		}
+		.rule {
+			line-height: 45rpx;
+			margin-top: 20rpx;
+		}
+	}
+	.apply-shop {
+		padding: 34rpx 30rpx 0 30rpx;
+		background: #fff;
+		border-radius: 10rpx;
+		margin-top: 8rpx;
+		.top-title {
+			font-size: 32rpx;
+			color: #0a080b;
+			font-weight: bold;
+			margin-bottom: 7rpx;
+		}
+		.shop-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-bottom: 1px solid #f9f9f9;
+			padding: 39rpx 0;
+			.shop-name {
+				font-size: 28rpx;
+				color: #3c3c3c;
+			}
+			.img {
+				width: 16rpx;
+				height: 26rpx;
+			}
+		}
+	}
+}
+
+.page-bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 110rpx;
+	background: #fff;
+	padding: 0 30rpx;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	border-top: 1px solid #bfbfc3;
+	.left {
+		color: #3c3c3c;
+		margin-right: 30rpx;
+		.meet {
+			font-size: 24rpx;
+			font-weight: bold;
+		}
+		.num {
+			font-size: 40rpx;
+			font-weight: bold;
+			color: #ff550c;
+		}
+		.unit {
+			font-size: 22rpx;
+		}
+	}
+	.mid {
+		display: flex;
+		align-items: center;
+		.img-area {
+			padding: 10rpx 30rpx;
+			.img {
+				width: 30rpx;
+				height: 30rpx;
+				margin: 0 8rpx;
+			}
+		}
+		.num {
+			font-size: 28rpx;
+			color: #3c3c3c;
+		}
+	}
+	.right {
+		margin-left: auto;
+		border-radius: 40rpx;
+		line-height: 1;
+		padding: 26rpx 80rpx;
+		color: #fff;
+		font-size: 28rpx;
+	}
+	.blue {
+		background: #0184f9;
+	}
+	.w-blue {
+		background: #c2e2ff;
+		padding: 26rpx 40rpx !important;
+		display: flex;
+		align-items: center;
+		.small-icon {
+			width: 36rpx;
+			height: 36rpx;
+			margin-left: 16rpx;
+		}
+	}
+}

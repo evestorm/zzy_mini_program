@@ -1,0 +1,293 @@
+.container {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.cs-top {
+	.yyt-list-row {
+		.left {
+			.icon {
+				width: 64rpx;
+				height: 64rpx;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+.main {
+	width: 100%;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 10rpx;
+	display: flex;
+	flex-direction: column;
+
+	.cs-info {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-between;
+		box-sizing: border-box;
+		padding: 20rpx;
+		.avatar {
+			width: 132rpx;
+			height: 132rpx;
+			border-radius: 50%;
+			overflow: hidden;
+			margin-right: 25rpx;
+		}
+		.info-center {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			.name-wrapper {
+				display: flex;
+				align-items: flex-end;
+				.name {
+					font-size: 32rpx;
+					font-family: PingFang SC;
+					font-weight: bold;
+					color: rgba(60, 60, 60, 1);
+					margin-right: 30rpx;
+				}
+				.detail {
+					font-size: 28rpx;
+					font-family: PingFang SC;
+					font-weight: 500;
+					color: rgba(0, 132, 249, 1);
+				}
+			}
+			.phone {
+				font-size: 32rpx;
+				font-family: PingFang SC;
+				font-weight: bold;
+				color: rgba(60, 60, 60, 1);
+			}
+		}
+		.phone-wrapper {
+			margin-right: 40rpx;
+			margin-left: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.img {
+				width: 56rpx;
+				height: 56rpx;
+			}
+		}
+	}
+
+	.yyt-list-item {
+		.title {
+			font-size: 28rpx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			color: rgba(115, 115, 115, 1);
+		}
+		.content {
+			font-size: 28rpx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			color: rgba(60, 60, 60, 1);
+		}
+		.shopInfo_list_content_rating_stars text {
+			font-size: 32rpx;
+			margin-left: 12rpx;
+		}
+	}
+}
+
+.bottom {
+	margin: 20rpx 0 180rpx 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 10rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	box-sizing: border-box;
+	padding: 20rpx;
+	.title {
+		font-size: 32rpx;
+		font-family: PingFang SC;
+		font-weight: bold;
+		color: rgba(10, 8, 11, 1);
+	}
+	.desc {
+		margin-top: 20rpx;
+		text-indent: 30rpx;
+		font-size: 28rpx;
+		font-family: PingFang SC;
+		font-weight: 500;
+		color: rgba(60, 60, 60, 1);
+		line-height: 40rpx;
+	}
+}
+
+.fix-bottom {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	height: 180rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	form {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 540rpx !important;
+		height: 80rpx;
+		background: rgba(0, 132, 249, 1);
+		border-radius: 40rpx;
+		font-size: 32rpx;
+		font-family: PingFang SC;
+		font-weight: bold;
+		color: rgba(255, 255, 255, 1);
+	}
+}
+
+// .myPersonal_myInfo {
+// 	border-radius: 10rpx;
+// 	background-color: #fff;
+// 	margin: 0 30rpx;
+// 	box-sizing: border-box;
+// }
+// .myPersonal_myInfo .myPersonal_myInfo_list {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	height: 88rpx;
+// 	margin: 0 30rpx;
+// 	border-bottom: 1rpx solid #e8e8e8;
+// }
+// .myPersonal_myInfo .myPersonal_myInfo_list:last-child {
+// 	border-bottom: 0;
+// }
+// .myPersonal_myInfo .myPersonal_myInfo_list text:first-child {
+// 	font-size: 32rpx;
+// 	color: #323232;
+// 	display: flex;
+// 	flex: 1;
+// }
+// .myPersonal_myInfo .myPersonal_myInfo_list text:last-child {
+// 	font-size: 28rpx;
+// 	color: #9a9a9a;
+// 	display: flex;
+// 	flex: 8;
+// 	justify-content: flex-end;
+// }
+// .myPersonal_myInfo .myPersonal_myInfo_list .myPersonal_myInfo_list_r {
+// 	display: flex;
+// 	align-items: center;
+// }
+// .myPersonal_myInfo .myPersonal_myInfo_list .myPersonal_myInfo_list_r image {
+// 	width: 30rpx;
+// 	height: 30rpx;
+// 	margin-right: 15rpx;
+// 	display: block;
+// }
+// .myPersonal_myInfo .myPersonal_myInfo_list picker {
+// 	width: 100%;
+// 	font-size: 28rpx;
+// 	color: #9a9a9a;
+// 	display: flex;
+// 	flex: 8;
+// 	justify-content: flex-end;
+// }
+// .myPersonal_myInfo .myPersonal_myInfo_list input {
+// 	width: 100%;
+// 	font-size: 28rpx;
+// 	color: #9a9a9a;
+// 	display: flex;
+// 	flex: 8;
+// 	text-align: right;
+// }
+// .myPersonal_myInfo .myPersonal_myInfo_list .placeholder {
+// 	font-size: 32rpx;
+// 	color: #323232;
+// }
+// .myPersonal_myInfo_server {
+// 	height: 88rpx;
+// 	background-color: #fff;
+// 	border-radius: 10rpx;
+// 	margin: 30rpx;
+// 	box-sizing: border-box;
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	padding: 0 30rpx;
+// }
+// .myPersonal_myInfo_server .myPersonal_myInfo_server_title {
+// 	font-size: 32rpx;
+// 	color: #323232;
+// }
+// .shopInfo_list_content_rating_stars text {
+// 	font-size: 32rpx;
+// 	margin-left: 12rpx;
+// }
+// .myPersonal_myInfo_brief {
+// 	display: flex;
+// 	border-radius: 10rpx;
+// 	background-color: #fff;
+// 	margin: 0 30rpx;
+// 	box-sizing: border-box;
+// 	padding: 30rpx;
+// }
+// .myPersonal_myInfo_brief .myPersonal_myInfo_brief_title {
+// 	font-size: 32rpx;
+// 	display: flex;
+// 	flex: 2;
+// }
+// .myPersonal_myInfo_brief .myPersonal_myInfo_brief_content {
+// 	font-size: 32rpx;
+// 	color: #9a9a9a;
+// 	display: flex;
+// 	flex: 9;
+// 	justify-content: flex-end;
+// }
+// .weui-btn-area {
+// 	display: flex;
+// 	width: 100%;
+// 	margin: 0;
+// 	margin-top: 90rpx;
+// }
+// .weui-btn {
+// 	margin-top: 0 !important;
+// 	margin: 0 30rpx !important;
+// 	width: 100%;
+// 	height: 80rpx;
+// 	line-height: 80rpx;
+// 	border-radius: 40rpx;
+// 	font-size: 34rpx;
+// }
+// .goShop {
+// 	width: 190rpx;
+// 	color: #323232;
+// 	background-color: #fff;
+// 	border: 1rpx solid #9a9a9a;
+// 	box-shadow: 0px 3px 8px #9e9e9e;
+// }
+// .goBooking {
+// 	/* width:470rpx; */
+// 	background-color: #4cacfe;
+// 	box-shadow: 0px 3px 8px #9e9e9e;
+// 	color: #fff;
+// }
+// .button-hover {
+// 	border: 1rpx solid #e8e8e8;
+// 	background-color: #e8e8e8;
+// 	color: #9a9a9a;
+// }

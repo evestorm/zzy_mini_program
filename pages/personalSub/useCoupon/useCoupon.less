@@ -1,0 +1,100 @@
+.container {
+	width: 100vw;
+	height: 100%;
+	overflow: hidden;
+	background: rgba(242, 242, 242, 1);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 30rpx;
+}
+
+.panel {
+	width: 690rpx;
+	height: 983rpx;
+	background: url('https://pic.cwyyt.cn/upload/img/20200324/140145145_use-conpon-bg.png');
+	background-position: center center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-between;
+
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-sizing: border-box;
+		padding: 30rpx;
+		.logo {
+			width: 64rpx;
+			height: 64rpx;
+			border-radius: 50%;
+		}
+		.name {
+			margin-left: 20rpx;
+			margin-right: auto;
+			font-size: 28rpx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			color: rgba(255, 255, 255, 1);
+		}
+		.sales {
+			font-size: 24rpx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			color: rgba(254, 255, 255, 1);
+			text {
+				font-size: 34rpx;
+			}
+		}
+	}
+
+	.main {
+		margin-top: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		.code {
+			width: 526rpx;
+			.img {
+				width: 100%;
+				margin-top: 50rpx;
+			}
+		}
+		.qrcode {
+			margin-top: 60rpx;
+			.img {
+				width: 304rpx;
+				height: 304rpx;
+			}
+		}
+	}
+
+	.footer {
+		padding: 60rpx 40rpx 20rpx 40rpx;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		font-size: 28rpx;
+		font-family: PingFang SC;
+		color: rgba(0, 132, 249, 1);
+		& > view {
+			text {
+				font-size: 32rpx;
+				font-weight: bold;
+			}
+		}
+	}
+	.footdowm
+	{
+		display: flex;
+		height: 300rpx;
+		background-color: #FFFFFF;
+	}
+}

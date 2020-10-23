@@ -1,0 +1,59 @@
+page{
+  width: 100%;
+}
+.logo {
+  display: block;
+  margin: 30rpx auto 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.store_text {
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+.form_main {
+  margin-top: 120rpx;
+  width: 100%;
+}
+.form_item {
+  border-bottom: 1px solid #E8E8E8;
+}
+.form_item > text {
+  display: inline-block;
+  margin: 0 150rpx 0 32rpx;
+  width: 90rpx;
+  font-size: 28rpx;
+  color: #9A9A9A;
+  line-height: 95rpx;
+}
+.form_item > .input_container {
+  display: inline-block;
+  width: 300rpx;
+}
+.form_item input {
+  display: inline-block;
+  font-size: 26rpx;
+  color:#4C4C4C;
+  vertical-align: middle;
+}
+.form_item > .getCode {
+  display: inline-block;
+  margin: 0;
+  width: 170rpx;
+  font-size: 26rpx;
+  color: #4CADFE;
+}
+.tied_card {
+  margin: 300rpx auto 0;
+  width:570rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  background: #0084F9;
+  border-radius: 44rpx;
+}

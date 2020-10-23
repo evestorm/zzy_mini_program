@@ -1,0 +1,183 @@
+@import '../../indexSub/shopInfo/shopInfo.less';
+
+.container {
+	background-color: #f5f5f5;
+	padding-top: 0 !important;
+}
+.container .page__bd1 {
+	overflow: hidden;
+}
+
+.container .weui-loadmore__tips_in-line {
+	font-size: 24rpx;
+	color: #9a9a9a;
+	background-color: #f5f5f5;
+}
+.container .weui-loadmore_line {
+	margin-top: 34rpx;
+}
+.container .weui-loadmore {
+	margin: 30rpx auto;
+}
+.couponDesc {
+	font-size: 32rpx;
+	color: #323232;
+	margin-bottom: 10rpx;
+}
+.noFree {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #9a9a9a;
+	font-size: 32rpx;
+}
+/* 优惠券样式 */
+.coupon_item {
+	margin: 30rpx;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 30rpx;
+	width: 690rpx;
+	height: 272rpx;
+	background: url('https://pic.cwyyt.cn/upload/img/20200324/1748554855_coupon-bg.png');
+	background-position: center center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.coupon_top {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.coupon_top .tip_handle {
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.coupon_name {
+	font-size: 34rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+}
+.coupon_tip {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 22rpx 6rpx 32rpx 0rpx;
+}
+.tip_time {
+	flex: 2;
+	line-height: 40rpx;
+}
+.tip_time text {
+	font-size: 24rpx;
+	font-family: PingFang SC;
+	color: rgba(255, 255, 255, 1);
+}
+.tip_handle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+.tip_handleBtn {
+	font-size: 32rpx;
+	color: #0183ff;
+	padding: 2rpx 35rpx;
+	// border: 1rpx solid #0183ff;
+	border-radius: 44rpx;
+	background: rgba(189, 230, 255, 1);
+	border-radius: 28rpx;
+	font-size: 28rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	color: rgba(0, 132, 249, 1);
+}
+.coupon_salseInfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.salseInfo_money {
+	font-size: 24rpx;
+	font-family: PingFang SC;
+	color: rgba(0, 132, 249, 1);
+	& > text {
+		font-size: 32rpx;
+		font-weight: bold;
+	}
+}
+.salseInfo_desc {
+	font-size: 24rpx;
+	font-family: PingFang SC;
+	color: rgba(0, 132, 249, 1);
+}
+.salseInfo_num {
+	font-size: 24rpx;
+	font-family: PingFang SC;
+	color: rgba(0, 132, 249, 1);
+	& > text {
+		font-size: 32rpx;
+		font-weight: bold;
+	}
+}
+.vertical_line {
+	display: inline-block;
+	margin: 0 20rpx;
+	width: 1px;
+	height: 23rpx;
+	background: #9a9a9a;
+}
+.coupon_item::before {
+	content: '';
+	// width: 44rpx;
+	// height: 44rpx;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	display: block;
+	background: #f5f5f5;
+	position: absolute;
+	top: 50%;
+	left: -22rpx;
+	transform: translateY(-50%);
+}
+.coupon_item::after {
+	content: '';
+	// width: 44rpx;
+	// height: 44rpx;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	display: block;
+	background: #f5f5f5;
+	position: absolute;
+	top: 50%;
+	right: -22rpx;
+	transform: translateY(-50%);
+}
+
+// 空优惠券
+.empty-wrapp {
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	.img {
+		width: 320rpx;
+		height: 174rpx;
+	}
+	.desc {
+		margin-top: 20rpx;
+		font-size: 30rpx;
+		color: #727272;
+	}
+}

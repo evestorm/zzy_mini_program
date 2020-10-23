@@ -1,0 +1,42 @@
+/**app.wxss**/
+@import "./lib/weui/weui.css";
+@import "./lib/iconfont/iconfont.css";
+/* UI基础库 */
+@import '/common/css/ui-main.css';
+
+/* 解决 v-show 无法控制显示隐藏的bug */
+view[hidden], navigator[hidden] {
+	display: none !important;
+}
+page {
+	background-color: #F2F2F2;
+	box-sizing: border-box;
+}
+
+.container {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	color: transparent;
+}
+
+button::after {
+	border: none;
+	border-radius: 0;
+}
+
+/* input 的 placeholder-class 单独设置无效，得在App.vue中设置 */
+.placeholder {
+	font-size: 24rpx;
+	color: #999999;
+}
+
+.main-go-more {
+	width: 14rpx;
+	height: 25rpx;
+	margin-left: auto;
+}

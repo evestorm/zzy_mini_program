@@ -1,0 +1,26 @@
+const pagesAu = {
+  '/pages/shopSearchSub/shopSearch/shopSearch': 2,
+  '/pages/myOrderSub/banquetDetail/banquetDetail': 0,
+  '/pages/order/order': 2,
+  '/pages/index/index': 0,
+  '/pages/indexSub/shopInfo/shopInfo': 1,
+  '/pages/indexSub/shopIntroduce/shopIntroduce': 1,
+  '/pages/indexSub/goBooking/goBooking': 2,
+  '/pages/myOrderSub/bookingInfo/bookingInfo': 2,
+  '/pages/common/salesManagerInfo/salesManagerInfo': 1,
+  '/pages/personalSub/buyCoupon/buyCoupon': 2,
+  '/pages/myOrderSub/commentsDetail/commentsDetail': 2,
+  '/pages/outUrl/outUrl': 1,
+  '/pages/myOrderSub/Invite/Invite': 1,
+  '/pages/myCollect/myCollect': 2,
+  '/pages/personalSub/myCoupon/myCoupon': 2,
+  '/pages/personalSub/couponInfo/couponInfo': 2,
+  '/pages/personalSub/coupons/coupons': 2,
+  '/pages/personalSub/myCard/myCard': 2,
+  '/pages/personalSub/storeMember/storeMember': 2,
+  '/pages/personalSub/memberCenter/memberCenter': 2,
+  '/pages/jcdPage/jcdPage': 1,
+  '/pages/personal/personal': 1,
+  '/pages/indexSub/orderFood/orderFood':1
+};
+export default pagesAu;

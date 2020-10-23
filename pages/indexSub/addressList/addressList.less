@@ -1,0 +1,76 @@
+.address {
+	margin-top: 30rpx;
+	padding-bottom: 140rpx;
+	.address-list {
+		width: 100%;
+		margin-top: 16rpx;
+		background: #fff;
+		padding: 30rpx;
+		padding-right: 10rpx;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+		&:first-child {
+			margin-top: 0;
+		}
+		.left-icon {
+			width: 30rpx;
+			height: 30rpx;
+			margin-right: 20rpx;
+		}
+		.list-item {
+			font-size: 28rpx;
+			color: #3c3c3c;
+			line-height: 1;
+			max-width: 80%;
+			.name,
+			.tel {
+				font-weight: bold;
+			}
+			.name {
+				margin-right: 26rpx;
+			}
+			.address-text {
+				margin-top: 20rpx;
+				line-height: 40rpx;
+			}
+		}
+		.edit {
+			width: 36rpx;
+			height: 32rpx;
+			margin-left: auto;
+			padding: 20rpx;
+		}
+	}
+	.no-address {
+		//无数据
+		position: absolute;
+		top: 350rpx;
+		width: 100%;
+		text-align: center;
+		color: #999;
+	}
+}
+
+// 底部按钮
+.bottom-btn {
+	position: fixed;
+	bottom: 30rpx;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	// justify-content: space-between;
+	padding: 0 40rpx;
+	box-sizing: border-box;
+	.btn {
+		height: 80rpx;
+		background: #0184f9;
+		border-radius: 40rpx;
+		line-height: 80rpx;
+		text-align: center;
+		color: #fff;
+		font-size: 32rpx;
+		font-weight: bold;
+		padding: 0 40rpx;
+	}
+}

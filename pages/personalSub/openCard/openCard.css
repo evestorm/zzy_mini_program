@@ -1,0 +1,46 @@
+/* pages/myOrder/myOrder.wxss */
+page{
+  width: 100%;
+}
+.logo {
+  display: block;
+  margin: 30rpx auto 40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.store_text {
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+.main {
+  margin-top: 70rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+}
+.main > image {
+  margin-right: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: top;
+}
+.main > text {
+  display: inline-block;
+  width: 470rpx;
+  line-height: 40rpx;
+  text-align: left;
+}
+.tied_card {
+  margin: 300rpx auto 0;
+  width:570rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  background: #4CADFE;
+  border-radius: 44rpx;
+}

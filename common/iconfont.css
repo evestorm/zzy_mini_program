@@ -1,0 +1,40 @@
+@font-face {
+	font-family: "iconfont";
+    src: url('~@/static/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iceditinfo:before {
+  content: "\e622";
+}
+
+.icon-riqi2:before {
+  content: "\e697";
+}
+
+.icon-jiahao:before {
+  content: "\e618";
+}
+
+.icon-sexm:before {
+  content: "\e648";
+}
+
+.icon-sexw:before {
+  content: "\e649";
+}
+
+.icon-tools:before {
+  content: "\e638";
+}
+
+.icon-kefu:before {
+  content: "\e610";
+}

@@ -1,0 +1,44 @@
+// 作者:李彦熹
+.page-box {
+	height: 100vh;
+	box-sizing: border-box;
+	.item {
+		height: 140rpx;
+		background: rgba(255, 255, 255, 1);
+		border-radius: 10rpx;
+		.item-top {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			font-family: '苹方 中等';
+			.item-top-left {
+				font-size: 28rpx;
+				font-family: '苹方 粗体';
+				font-weight: bold;
+				color: rgba(60, 60, 60, 1);
+			}
+			.item-top-right {
+				font-size: 22rpx;
+				font-family: '苹方 中等';
+				font-weight: 500;
+				color: rgba(153, 153, 153, 1);
+			}
+		}
+		.item-bottom {
+			font-size: 22rpx;
+			font-family: '苹方 中等';
+			color: rgba(60, 60, 60, 1);
+			image {
+				width: 13rpx;
+				height: 15rpx;
+			}
+		}
+	}
+
+	.item-selected-img {
+		width: 50rpx;
+		height: 52rpx;
+		left: 0px;
+		position: absolute;
+	}
+}

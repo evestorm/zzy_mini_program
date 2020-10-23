@@ -1,0 +1,82 @@
+// 作者:李彦熹
+.data-wrapper {
+	flex: 1;
+	.data-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-family: '苹方 中等';
+		height: 110rpx;
+		line-height: 110rpx;
+		font-size: 28rpx;
+		.title {
+			color: rgba(115, 115, 115, 1);
+			text-align: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			image {
+				width: 64rpx;
+				height: 64rpx;
+				border-radius: 32rpx;
+				margin-right: 18rpx;
+			}
+		}
+		.content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: right;
+			color: rgba(60, 60, 60, 1);
+			image {
+				width: 16rpx;
+				height: 30rpx;
+			}
+		}
+	}
+	.data-item-rich {
+		flex-direction: column;
+		align-items: flex-start;
+		height: auto;
+		overflow: hidden;
+		.item-rich-title {
+			display: flex;
+			height: 90rpx;
+			color: rgba(115, 115, 115, 1);
+		}
+		.item-rich-content {
+			display: flex;
+			text-indent: 56rpx;
+			line-height: 40rpx;
+			text-align: left;
+			height: 160rpx;
+			color: rgba(60, 60, 60, 1);
+			.item-rich-text {
+				// display: -webkit-box;
+				// -webkit-box-orient: vertical;
+				// -webkit-line-clamp: 3;
+				overflow: scroll;
+			}
+		}
+	}
+}
+
+.text-cc {
+	color: #cccccc;
+}
+
+.btn-cst {
+	width: 270rpx;
+	height: 80rpx;
+	background: rgba(0, 132, 249, 1) !important;
+	border-radius: 40rpx;
+	font-size: 32rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	line-height: 40rpx;
+}
+
+.cu-dialog {
+	background-color: #ffffff;
+}

@@ -1,0 +1,67 @@
+// 作者:覃彬
+.yyt-steps {
+	box-sizing: border-box;
+	.bg-cove {
+		//灰色背景
+		box-sizing: border-box;
+		background: rgba(0, 0, 0, 0.5);
+		.title {
+			//顶部标题
+			color: #3c3c3c;
+		}
+		.step-list {
+			box-sizing: border-box;
+			min-height: 590rpx;
+			.icon-img {
+				width: 28rpx;
+				height: 28rpx;
+			}
+			//时间轴列表
+			.time-list {
+				position: relative;
+				.time-item {
+					color: #737373;
+					.icon-view {
+						box-sizing: border-box;
+						width: 20rpx;
+						height: 20rpx;
+						background-color: #fff;
+						margin-right: 25rpx;
+						.left-icon {
+							background-color: #cecece;
+							width: 8rpx;
+							height: 8rpx;
+							border-radius: 50%;
+						}
+					}
+				}
+				.time-left-border {
+					width: 100%;
+					height: 24rpx;
+					border-left: 2rpx solid #eee;
+					margin-left: 9rpx;
+				}
+				&:last-child {
+					font-family: PingFang-SC-Bold;
+					font-weight: 600;
+					color: #0a080b;
+					font-size: 28rpx;
+					.icon-view {
+						.left-icon {
+							width: 16rpx;
+							height: 16rpx;
+							border-radius: 50%;
+							background: #0183f9;
+						}
+					}
+
+					.time-left-border {
+						&:last-child{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
